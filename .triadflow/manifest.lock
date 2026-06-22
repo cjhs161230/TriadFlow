@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "root": ".triadflow",
+  "files": [
+    {
+      "path": "tools/triad_supervisor.py",
+      "sha256": "3a4621e80be0d25121618afe75974bd94aa1fe3406fad4f0e42feee28cd449d1",
+      "size": 29822
+    },
+    {
+      "path": "tools/triad.py",
+      "sha256": "5e2b0c4a31aac83437cb271a93738c8d99d97487b6f86fb742b6b1e064bcbbad",
+      "size": 1802
+    },
+    {
+      "path": "prompts/planner.md",
+      "sha256": "10b044af8996fefc1cd787ab8788b966894642a2badc67cec0740f747f133866",
+      "size": 1392
+    },
+    {
+      "path": "prompts/reviewer_plan.md",
+      "sha256": "3d08dc2e599c2c0ab5662150af2bcaeae4af29c7f8d1287f0ccdfbd67647e0a4",
+      "size": 804
+    },
+    {
+      "path": "prompts/developer.md",
+      "sha256": "b5a4efb398e226fee26bf89e8cb7daec82fa8f6f56d3f88ffd6f3125f91abe62",
+      "size": 1388
+    },
+    {
+      "path": "prompts/reviewer_code.md",
+      "sha256": "4cf1f17efe442add000b3dc257227f054d8c101511534a1ff707badac4588c2e",
+      "size": 1144
+    },
+    {
+      "path": "prompts/planner_fix.md",
+      "sha256": "da2f8d4cabad9904ece6a37f8fe2b5caea63e2318abf1f5ce4c498171f312ada",
+      "size": 646
+    },
+    {
+      "path": "prompts/reviewer_fix_plan.md",
+      "sha256": "196077a743d12da46d951e82d758250254d6de254d4a2ccbe9a01694ad36be68",
+      "size": 578
+    },
+    {
+      "path": ".agents/skills/triad-plan-loop/SKILL.md",
+      "sha256": "9578547f3eff40941b7c231cfd03ecc790f2aa82641935562c94a5f0b9eae7b3",
+      "size": 1631
+    },
+    {
+      "path": ".agents/skills/triad-plan-loop/references/workflow.md",
+      "sha256": "0587a14edf74c083a5a84e80ad32c8f75d40f62d67d924406593c343dff02f95",
+      "size": 1127
+    },
+    {
+      "path": ".agents/skills/triad-plan-loop/references/safety_policy.md",
+      "sha256": "81fb788be966ea6e85a752a1682c3efb941a0066f1c7ae7c330d7b046ffed9e9",
+      "size": 914
+    },
+    {
+      "path": "templates/gitignore.snippet",
+      "sha256": "60d3147af137492df20ba49b07a62cc2be2b17cc0d4bd12d0ce4e99ec302f5d4",
+      "size": 184
+    },
+    {
+      "path": "templates/gitattributes.snippet",
+      "sha256": "ffc5520121c38da69a84f5ee4b0c5ffd6b1b109e2294d804401ecca82376fdf5",
+      "size": 67
+    },
+    {
+      "path": "TRIAD_AGENT_WORKFLOW.md",
+      "sha256": "109ed6fbfb6b65d57d1071d0293477bfca9ce8c195421b74de65c76764eb300f",
+      "size": 8916
+    }
+  ],
+  "protected_blocks": [
+    {
+      "path": "AGENTS.md",
+      "name": "TRIADFLOW",
+      "sha256": "7fa2a4b662f889ddcafc85a30ee23a355941fe94616905937ab37c548b7df1b0"
+    },
+    {
+      "path": "README.md",
+      "name": "TRIADFLOW",
+      "sha256": "755dadd4bf4d378cf4f42fd5d8e9b5570a65e19500f4d113b024b3f54a2bc7fd"
+    }
+  ]
+}

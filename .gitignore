@@ -1,0 +1,14 @@
+# Python/cache output
+__pycache__/
+*.py[cod]
+
+# TriadFlow per-run state
+PLAN.md
+.triadflow/.agent/logs/
+.triadflow/.agent/reports/
+.triadflow/.agent/tmp/
+
+# Local environment
+.env
+.env.*
+!.env.example

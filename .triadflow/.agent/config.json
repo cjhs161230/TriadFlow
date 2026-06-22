@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "codex_command": "codex",
+  "mode": "manual",
+  "allow_role_resume": false,
+  "capture_json": false,
+  "paths": {
+    "plan": "PLAN.md",
+    "state": ".agent/state.json",
+    "audit_log": ".agent/logs/audit.jsonl",
+    "reports": ".agent/reports",
+    "prompts": "prompts"
+  },
+  "safety": {
+    "high_risk_keywords": [
+      "deploy",
+      "publish",
+      "production",
+      "prod database",
+      "delete database",
+      "payment",
+      "billing",
+      "secret",
+      "credential",
+      "token",
+      "private key",
+      "force push",
+      "git reset --hard",
+      "git clean"
+    ]
+  }
+}

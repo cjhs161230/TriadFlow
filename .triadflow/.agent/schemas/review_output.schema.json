@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Triad Review Output",
+  "type": "object",
+  "required": ["status", "findings"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["PASS", "NEEDS_FIX", "BLOCKED", "USER_APPROVAL_REQUIRED"]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "evidence", "recommended_action"],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "high", "medium", "low", "info"]
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "affected_path": {
+            "type": ["string", "null"]
+          },
+          "recommended_action": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

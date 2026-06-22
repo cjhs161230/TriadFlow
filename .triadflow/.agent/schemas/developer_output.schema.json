@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Triad Developer Output",
+  "type": "object",
+  "required": ["status", "task_id", "files_changed", "commands_run"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["IMPLEMENTED", "BLOCKED", "USER_APPROVAL_REQUIRED"]
+    },
+    "task_id": {
+      "type": ["string", "null"]
+    },
+    "files_changed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "commands_run": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tests_run": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}
