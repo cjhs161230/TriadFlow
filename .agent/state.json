@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "active": false,
+  "mode": "manual",
+  "current_phase": "idle",
+  "current_task_id": null,
+  "iteration": 0,
+  "max_iterations": 10,
+  "last_status": "idle",
+  "next_action": "await_user_request",
+  "blocked_reason": null,
+  "requires_user_approval": false,
+  "agents": {
+    "planner": {
+      "last_run": null,
+      "last_report": ".agent/reports/planner_report.md"
+    },
+    "reviewer": {
+      "last_run": null,
+      "last_report": ".agent/reports/code_review.md"
+    },
+    "developer": {
+      "last_run": null,
+      "last_report": ".agent/reports/implementation_report.md"
+    }
+  },
+  "safety": {
+    "allow_auto_continue": false,
+    "allow_network": false,
+    "allow_deploy": false,
+    "allow_push": false,
+    "allow_destructive": false
+  }
+}

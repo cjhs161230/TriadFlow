@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "note": "Hook matcher/output support can vary by Codex CLI version. These hooks are conservative fallbacks; if the installed CLI does not load this schema automatically, run the scripts manually or adapt this file to the local CLI hook contract.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "shell_command",
+        "command": "python .codex/hooks/command_gatekeeper.py"
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "shell_command",
+        "command": "python .codex/hooks/command_gatekeeper.py"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "shell_command",
+        "command": "python .codex/hooks/command_gatekeeper.py"
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "command": "python .codex/hooks/stop_guard.py"
+      }
+    ]
+  }
+}

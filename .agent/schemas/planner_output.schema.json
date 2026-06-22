@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Triad Planner Output",
+  "type": "object",
+  "required": ["status", "summary", "plan_path"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["PLAN_READY", "FIX_PLAN_READY", "NEEDS_USER_INPUT", "BLOCKED", "USER_APPROVAL_REQUIRED"]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "plan_path": {
+      "type": "string"
+    },
+    "task_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_reason": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}
