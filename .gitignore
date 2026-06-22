@@ -4,12 +4,11 @@ __pycache__/
 
 # TriadFlow per-run state
 PLAN.md
-.agent/logs/
-.agent/reports/
-.agent/tmp/
+.triadflow/.agent/logs/
+.triadflow/.agent/reports/
+.triadflow/.agent/tmp/
 
 # Local environment
 .env
 .env.*
 !.env.example
-

@@ -9,6 +9,8 @@ Tasks:
 - Inspect .agent/reports/latest_diff.patch.
 - Inspect .agent/reports/test_output.txt if present.
 - Check correctness, requirement coverage, regression risk, security risk, missing tests, style/convention issues, and unrelated changes.
+- Check whether README.md, AGENTS.md, and PLAN.md were updated when required by the project rules.
+- Check that PLAN.md changes are limited to existing-step execution status unless explicit user approval is documented.
 - Write .agent/reports/code_review.md.
 - Do not edit code.
 

@@ -10,6 +10,12 @@
   "next_action": "await_user_request",
   "blocked_reason": null,
   "requires_user_approval": false,
+  "plan": {
+    "approval": "not_confirmed",
+    "approved_at": null,
+    "path": null,
+    "sha256": null
+  },
   "agents": {
     "planner": {
       "last_run": null,
